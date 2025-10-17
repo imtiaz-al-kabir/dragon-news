@@ -1,5 +1,11 @@
+import SocialLogin from "./SocialLogin";
+
 const RightAside = () => {
-  return <div>right aside</div>;
+  return (
+    <div>
+      <SocialLogin />
+    </div>
+  );
 };
 
 export default RightAside;

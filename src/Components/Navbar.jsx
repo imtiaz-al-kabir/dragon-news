@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import user from "../assets/user.png"
+import user from "../assets/user.png";
 
 const Navbar = () => {
   const navLink = [
@@ -12,8 +12,9 @@ const Navbar = () => {
     <div className="flex justify-between items-center mt-8 px-6">
       <div></div>
       <div className=" flex gap-4 text-xl">
-        {navLink.map((link) => (
+        {navLink.map((link, ind) => (
           <NavLink
+            key={ind}
             className={({ isActive }) =>
               isActive ? "border-b-3 border-secondary" : "text-accent"
             }

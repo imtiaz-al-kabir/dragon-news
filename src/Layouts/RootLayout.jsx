@@ -12,7 +12,7 @@ const RootLayout = () => {
       <LatestNews />
       <Navbar />
       <main className="my-10">
-        <div className="grid grid-cols-12 grid-rows-5 gap-4 *:border-2">
+        <div className="grid grid-cols-12 grid-rows-5 gap-4 ">
           <div className="col-span-3">
             <LeftAside />
           </div>
