@@ -4,9 +4,9 @@ import { BsGithub } from "react-icons/bs";
 const SocialLogin = () => {
     return (
         <div>
-            <h1 className='font-bold text-xl'>Login With</h1>
+            <h1 className='font-bold mb-5 '>Login With</h1>
 
-            <div className='space-y-3 py-5'>
+            <div className='space-y-3 '>
                 <button className='btn w-full btn-outline btn-secondary text-md'>
                     <IoLogoGoogle size={20} />
                     <span>Login with Google</span>
