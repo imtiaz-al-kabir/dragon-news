@@ -24,7 +24,7 @@ const CategoryNews = () => {
   }, [data, id]);
   return (
     <div>
-      <h2>Total ({categoryNews.length}) news found</h2>
+      <h2 className="font-bold text-xl pl-5 pb-5">Total <span className="text-secondary">{categoryNews.length}</span> news found</h2>
       <div className="grid grid-cols-1 gap-5 px-5">
         {categoryNews.map((news) => (
           <NewsCard news={news} />

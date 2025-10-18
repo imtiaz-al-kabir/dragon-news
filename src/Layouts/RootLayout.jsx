@@ -12,14 +12,14 @@ const RootLayout = () => {
       <LatestNews />
       <Navbar />
       <main className="my-10">
-        <div className="grid grid-cols-12 grid-rows-5 gap-4 ">
-          <div className="col-span-3">
+        <div className="grid grid-cols-12  gap-4 ">
+          <div className="col-span-3 sticky top-0 h-fit">
             <LeftAside />
           </div>
           <div className="col-span-6 ">
             <Outlet />
           </div>
-          <aside className="col-span-3">
+          <aside className="col-span-3 sticky top-0 h-fit">
             <RightAside />
           </aside>
         </div>
