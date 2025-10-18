@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="flex justify-center flex-col items-center gap-3">
       <img
-        className="px-5 md:w-[471px] md:h-[60px] mt-12"
+        className="px-5 w-[300px] md:w-[471px] md:h-[60px] mt-12"
         src={logo}
         alt="logo"
       />

@@ -12,8 +12,8 @@ const RootLayout = () => {
       <LatestNews />
       <Navbar />
       <main className="my-10">
-        <div className="grid grid-cols-12  gap-4 ">
-          <div className="col-span-3 sticky top-0 h-fit">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start ">
+          <div className="sticky col-span-1 top-0 z-20 bg-white md:bg-transparent h-fit  border-b lg:border-0  lg:col-span-3">
             <LeftAside />
           </div>
           <div className="col-span-6 ">
