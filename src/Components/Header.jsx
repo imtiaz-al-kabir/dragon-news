@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 const Header = () => {
   const now = new Date();
   const day = format(now, "EEEE");
-  const monthAndDate = format(now, "MMMM MM yyyy");
+  const monthAndDate = format(now, "MMMM d yyyy");
 
   return (
     <div className="flex justify-center flex-col items-center gap-3">
