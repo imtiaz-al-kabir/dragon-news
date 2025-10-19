@@ -1,6 +1,13 @@
-Task for You
-Show Breaking News Title on Latest News
-Implement Forget Password Feature
-Implement Google Login
-Implement Github Login
-Do Conditional Rendering on Social Icons
+## Dragon News
+
+### Technology
+
+React,Tailwind,React Router,DaisyUi,React icons ,react date fs
+
+### Authentication
+
+FireBase
+
+## Deploy
+
+<https://dragon-news-for-breaking.web.app/category/1>

@@ -14,7 +14,7 @@ const TrendingNews = () => {
   return (
     <div className="flex flex-col gap-5 ">
       {trendingNews.map((news) => (
-        <div className="shadow p-4">
+        <div key={news.id} className="shadow p-4 hidden md:block">
           <img
             src={news.image_url}
             alt={news.title}

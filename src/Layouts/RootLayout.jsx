@@ -13,13 +13,13 @@ const RootLayout = () => {
       <Navbar />
       <main className="my-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start ">
-          <div className="sticky col-span-1 top-0 z-20 bg-white md:bg-transparent h-fit  border-b lg:border-0  lg:col-span-3">
+          <div className="sticky border-red-600 w-full col-span-12 top-0 z-20 bg-white md:bg-transparent h-fit border-b lg:border-0 lg:col-span-3 sm:col-span-12 px-5">
             <LeftAside />
           </div>
-          <div className="col-span-6 ">
+          <div className="col-span-12 md:col-span-6 ">
             <Outlet />
           </div>
-          <aside className="col-span-6 mx-5 sm:col-span-3  sticky top-0 h-fit">
+          <aside className="col-span-12 mx-5 sm:col-span-3  sticky top-0 h-fit">
             <RightAside />
           </aside>
         </div>
