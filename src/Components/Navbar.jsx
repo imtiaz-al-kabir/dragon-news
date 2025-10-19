@@ -1,13 +1,23 @@
+import { use } from "react";
 import { Link, NavLink } from "react-router";
-import user from "../assets/user.png";
-
+import { AuthContext } from "../Context/AuthContext";
+import userImg from "../assets/user.png";
 const Navbar = () => {
+  const { user, signoutUser } = use(AuthContext);
   const navLink = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
     { path: "/career", label: "Career" },
   ];
+  console.log(user);
 
+  const handleSignOut = () => {
+    signoutUser()
+      .then(() => {
+        alert("logout successfully");
+      })
+      .catch((error) => console.log(error.message));
+  };
   return (
     <div className="flex flex-col sm:flex-row justify-between items-center mt-8 px-6">
       <div></div>
@@ -25,8 +35,21 @@ const Navbar = () => {
         ))}
       </div>
       <div className="flex gap-5">
-        <img src={user} alt="" />
-        <Link to="/auth/login" className="btn btn-primary px-7 text-lg">Login</Link>
+        {user ? <img src={userImg} alt="" /> : <img src={userImg} alt="" />}
+        <img src={userImg} alt="" />
+
+        {user ? (
+          <button
+            onClick={handleSignOut}
+            className="btn btn-primary px-7 text-lg"
+          >
+            Signout
+          </button>
+        ) : (
+          <Link to="/auth/login" className="btn btn-primary px-7 text-lg">
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );
