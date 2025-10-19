@@ -19,7 +19,7 @@ const RootLayout = () => {
           <div className="col-span-6 ">
             <Outlet />
           </div>
-          <aside className="col-span-3 sticky top-0 h-fit">
+          <aside className="col-span-6 mx-5 sm:col-span-3  sticky top-0 h-fit">
             <RightAside />
           </aside>
         </div>

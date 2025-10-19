@@ -19,10 +19,10 @@ const NewsDetails = () => {
         <Header />
       </header>
       <main className="grid grid-cols-12">
-        <section className="col-span-9 p-11">
+        <section className="col-span-full md:col-span-9 p-11">
           <NewsDetailsCard news={news}/>
         </section>
-        <aside className="col-span-3">
+        <aside className="col-span-full md:col-span-3">
           <RightAside />
         </aside>
       </main>
