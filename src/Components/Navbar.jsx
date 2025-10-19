@@ -35,8 +35,7 @@ const Navbar = () => {
         ))}
       </div>
       <div className="flex gap-5">
-        {user ? <img src={userImg} alt="" /> : <img src={userImg} alt="" />}
-        <img src={userImg} alt="" />
+        <img className="size-12 rounded-full" src={`${user ? user.photoURL : userImg}`} alt="user image" />
 
         {user ? (
           <button

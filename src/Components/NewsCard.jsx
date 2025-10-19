@@ -1,8 +1,10 @@
 import { CiBookmark } from "react-icons/ci";
 import { FaRegEye, FaStar } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
+import { Link } from "react-router";
 const NewsCard = ({ news }) => {
-  const { title, author, thumbnail_url, details, rating, total_view } = news;
+  const { id, title, author, thumbnail_url, details, rating, total_view } =
+    news;
 
   // Format date
   const formattedDate = new Date(news.author.published_date).toLocaleDateString(
@@ -53,10 +55,13 @@ const NewsCard = ({ news }) => {
       <div className="px-4 py-4">
         <p className="text-sm text-gray-700">
           {details.length > 150 ? `${details.slice(0, 150)}...` : details}
-          <span className="text-blue-500 font-semibold cursor-pointer">
+          <Link
+            to={`/news-details/${id}`}
+            className="text-blue-500 font-semibold cursor-pointer"
+          >
             {" "}
             Read More
-          </span>
+          </Link>
         </p>
       </div>
 
