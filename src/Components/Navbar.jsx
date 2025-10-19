@@ -9,7 +9,7 @@ const Navbar = () => {
     { path: "/about", label: "About" },
     { path: "/career", label: "Career" },
   ];
-  console.log(user);
+  // console.log(user);
 
   const handleSignOut = () => {
     signoutUser()

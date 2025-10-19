@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router";
+import LoadingSpinner from "../Components/LoadingSpinner";
 import AuthLayout from "../Layouts/AuthLayout";
 import NewsDetails from "../Layouts/NewsDetails";
 import RootLayout from "../Layouts/RootLayout";
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
         path: "/category/:id",
         Component: CategoryNews,
         loader: () => fetch("/news.json"),
+        hydrateFallbackElement: <LoadingSpinner />,
       },
     ],
   },
@@ -46,6 +48,7 @@ export const router = createBrowserRouter([
       </PrivateRoute>
     ),
     loader: () => fetch("/news.json"),
+    hydrateFallbackElement: <LoadingSpinner />,
   },
   {
     path: "*",

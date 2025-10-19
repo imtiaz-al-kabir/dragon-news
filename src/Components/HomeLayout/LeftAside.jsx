@@ -1,11 +1,12 @@
 import { Suspense } from "react";
 import Categories from "../Categories";
+import LoadingSpinner from "../LoadingSpinner";
 
 const LeftAside = () => {
   return (
     <div>
       <Suspense
-        fallback={<span className="loading loading-spinner text-error"></span>}
+        fallback={<LoadingSpinner/>}
       >
         <Categories />
       </Suspense>

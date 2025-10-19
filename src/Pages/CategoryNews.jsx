@@ -4,7 +4,7 @@ import NewsCard from "../Components/NewsCard";
 
 const CategoryNews = () => {
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
   const data = useLoaderData();
   const [categoryNews, setCategoryNews] = useState([]);
 
@@ -27,7 +27,7 @@ const CategoryNews = () => {
       <h2 className="font-bold text-xl pl-5 pb-5">Total <span className="text-secondary">{categoryNews.length}</span> news found</h2>
       <div className="grid grid-cols-1 gap-5 px-5">
         {categoryNews.map((news) => (
-          <NewsCard news={news} />
+          <NewsCard key={news.id} news={news} />
         ))}
       </div>
     </div>
