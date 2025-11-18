@@ -16,34 +16,32 @@ Dragon News provides users with the latest news organized by categories. Users c
 ![Dragon News Screenshot](image.png)
 ```
 
-*(Replace `screenshot.png` with your actual screenshot file path)*
-
 ---
 
 ## 🛠️ Technologies Used
 
-* **React**
-* **Tailwind CSS**
-* **React Router**
-* **DaisyUI**
-* **React Icons**
-* **React Date FS**
+- **React**
+- **Tailwind CSS**
+- **React Router**
+- **DaisyUI**
+- **React Icons**
+- **React Date FS**
 
 ---
 
 ## 🔑 Authentication
 
-* Firebase Authentication
+- Firebase Authentication
 
 ---
 
 ## ⭐ Key Features
 
-* 🔍 Categorized news browsing
-* 📱 Fully responsive design
-* 🔒 Secure user authentication via Firebase
-* ⚡ Fast performance and dynamic content loading
-* 🎨 Modern UI with Tailwind CSS & DaisyUI
+- 🔍 Categorized news browsing
+- 📱 Fully responsive design
+- 🔒 Secure user authentication via Firebase
+- ⚡ Fast performance and dynamic content loading
+- 🎨 Modern UI with Tailwind CSS & DaisyUI
 
 ---
 
@@ -64,8 +62,6 @@ Dragon News provides users with the latest news organized by categories. Users c
     "tailwindcss": "^4.1.14"
 }
 ```
-
-
 
 ---
 
