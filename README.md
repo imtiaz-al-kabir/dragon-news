@@ -12,9 +12,9 @@ Dragon News provides users with the latest news organized by categories. Users c
 
 ## 🖼️ Project Screenshot
 
-```md
-![Dragon News Screenshot](image.png)
-```
+<p align="center">
+  <img src="./public/image.png" alt="Hero IO Screenshot" width="700"/>
+</p>
 
 ---
 
